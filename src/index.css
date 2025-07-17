@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Neue Montreal Light';
+  src: url('./assets/fonts/NeueMontreal-Light.otf');
+}
+
+@font-face {
+  font-family: 'Neue Montreal Light Italic';
+  src: url('./assets/fonts/NeueMontreal-LightItalic.otf');
+}
+
+@font-face {
+  font-family: 'Neue Montreal Regular';
+  src: url('./assets/fonts/NeueMontreal-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Neue Montreal Italic';
+  src: url('./assets/fonts/NeueMontreal-Italic.otf');
+}
+
+@font-face {
+  font-family: 'Neue Montreal Medium';
+  src: url('./assets/fonts/NeueMontreal-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Neue Montreal Medium Italic';
+  src: url('./assets/fonts/NeueMontreal-MediumItalic.otf');
+}
+
+@font-face {
+  font-family: 'Neue Montreal Bold';
+  src: url('./assets/fonts/NeueMontreal-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Neue Montreal Bold Italic';
+  src: url('./assets/fonts/NeueMontreal-BoldItalic.otf');
+}
+
+:root {
+  --color: rgba(255, 255, 255, 0.87);
+  --color-hover: rgba(255, 255, 255, 0.6);
+  --bg-color: #242424;
+  --frame-color: rgba(0, 0, 0, 0.5);
+  --frame-inner: #828282;
+  --link-color: #646cff;
+  --link-hover: #535bf2;
+  --frame-padding: 28px;
+  --inner-padding: 20px;
+  --text-width: 140px;
+  --letter-spacing: 0.05rem;
+}
+
+.light-theme {
+  --color: #213547;
+  --color-hover: rgba(113, 113, 113, 0.6);
+  --bg-color: #ffffff;
+  --frame-color: rgba(255, 255, 255, 0.5);
+  --frame-inner: #000;
+  --link-hover: #747bff;
+}
+
+body {
+  color: var(--color);
+  background-color: var(--bg-color);
+  margin: 0;
+  height: 100vh;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  font-size: 16px;
+  font-family: 'Neue Montreal Regular';
+  font-synthesis: none;
+}
+
+p, ul, li, h1, h2, h3, h4, h5, h6, a {
+  color: var(--color);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  color: var(--color);
+  border: none;
+  cursor: pointer;
+}

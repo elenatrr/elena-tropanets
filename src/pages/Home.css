@@ -1,0 +1,29 @@
+.home {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.home-inner {
+  max-width: var(--text-width);
+}
+
+.home-text {
+  text-align: right;
+}
+
+.home-text.italic {
+  font-family: 'Neue Montreal Light Italic', sans-serif;
+  letter-spacing: var(--letter-spacing);
+}
+
+.home-link {
+  font-family: "Neue Montreal Light Italic", sans-serif;
+  letter-spacing: var(--letter-spacing);
+}
+
+.home-link:hover {
+  color: var(--color-hover);
+  transition: color 0.3s ease;
+}

@@ -1,0 +1,17 @@
+.about {
+  text-align: right;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.about-inner {
+  max-width: var(--text-width);
+}
+
+.about-text.italic {
+  font-family: 'Neue Montreal Light Italic', sans-serif;
+  letter-spacing: var(--letter-spacing);
+}

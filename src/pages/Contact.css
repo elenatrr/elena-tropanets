@@ -1,0 +1,33 @@
+.contact {
+  height: 100%;
+  text-align: right;
+}
+
+.contact-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact-list-item:hover {
+  color: var(--color-hover);
+  transition: color 0.3s ease;
+}
+
+.contact-list-text {
+  font-family: 'Neue Montreal Light Italic', sans-serif;
+  letter-spacing: var(--letter-spacing);
+}
+
+.socials {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+}

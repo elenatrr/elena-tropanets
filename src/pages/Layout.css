@@ -1,0 +1,41 @@
+.layout {
+  flex : 1 1 100%;
+  position: relative;
+  padding: var(--frame-padding);
+}
+
+.layout:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: var(--frame-padding) solid var(--frame-color);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.layout:after {
+  content: '';
+  position: fixed;
+  top: var(--frame-padding);
+  left: var(--frame-padding);
+  right: var(--frame-padding);
+  bottom: var(--frame-padding);
+  border: 1px solid var(--frame-inner);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.layout-inner {
+  height: 100%;
+  display: flex;
+  overflow-y: hidden;
+  overscroll-behavior: contain;
+}
+
+.main {
+  flex: 1 1 auto;
+  padding: var(--inner-padding);
+}

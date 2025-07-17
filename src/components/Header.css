@@ -1,0 +1,45 @@
+.header {
+  position: relative;
+  flex: 1 1 30%;
+  max-width: 30%;
+  padding: var(--inner-padding);
+}
+
+.header-inner {
+  position: fixed;
+}
+
+.heading {
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+}
+
+.subheading {
+  margin-bottom: 6em;
+  font-size: 1rem;
+  letter-spacing: var(--letter-spacing);
+}
+
+.heading, .subheading {
+  font-family: 'Neue Montreal Light', sans-serif;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-list-item a {
+  color: var(--color);
+  transition: color 0.3s ease;
+}
+
+.nav-list-item.active {
+  font-family: 'Neue Montreal Italic', sans-serif;
+  letter-spacing: var(--letter-spacing);
+}
+
+.nav-list-item:hover a {
+  color: var(--color-hover);
+}
